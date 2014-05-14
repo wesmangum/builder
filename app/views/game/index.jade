@@ -1,0 +1,27 @@
+extends ../shared/template
+
+block content
+  h1 Builder
+
+  form
+    input(type='text', name='username', placeholder='Username' autofocus-true)
+    button#login Login
+
+  #username
+
+  #display
+    h4 Balance
+    .balance-wood
+    .balance-cash
+
+    h4 Sell Wood for Cash
+    form
+      input(type='text', name='amount', placeholder='How much wood to sell?')
+      button#sell Sell Wood
+
+  button#seed Plant Seed
+  button#getForest Get Forest
+  #forest
+
+block scripts
+  script(src='/js/es6/compiled/game.js')
