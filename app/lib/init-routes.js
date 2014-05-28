@@ -17,7 +17,7 @@ function load(app, fn){
   var home = traceur.require(__dirname + '/../routes/home.js');
   var game = traceur.require(__dirname + '/../routes/game.js');
 
-  app.get('/', dbg, home.index);
+  app.get('/', dbg, game.index);
   app.get('/help', dbg, home.help);
 
   app.get('/game', dbg, game.index);
